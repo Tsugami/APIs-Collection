@@ -10,7 +10,7 @@ export const PostCard = ({ post }: PostCardProps) => {
     <article
       className='w-full bg-neutral-800 p-6 rounded shadow-md hover:cursor-pointer'
       aria-labelledby={`post-title-${post.title}`}
-      tabIndex={0} // Permite foco para navegação por teclado
+      tabIndex={0}
     >
       <header>
         <h2 id={`post-title-${post.title}`} className='text-2xl font-bold text-neutral-100'>
