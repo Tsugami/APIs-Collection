@@ -1,10 +1,10 @@
-import { http, HttpResponse } from "msw";
-import { faker } from "@faker-js/faker";
-import { Blog } from "../api";
+import { http, HttpResponse } from 'msw';
+import { faker } from '@faker-js/faker';
+import { Blog } from '../api';
 
 export const handlers = [
   // Intercept "GET https://example.com/user" requests...
-  http.get("/blogs", () => {
+  http.get('/blogs', () => {
     const blogs: Blog[] = Array.from({ length: 5 }, (_, index) => ({
       id: index + 1,
       title: faker.food.dish(),
